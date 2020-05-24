@@ -14,9 +14,9 @@ const person = {};
 
 Object.defineProperty(person, "salary", {
     get() {
-        let d_now = new Date();
-        let next_date = new Date(d_now.getFullYear(), d_now.getMonth() + 1, 0);
-        let dif = new Date(next_date - d_now);
+        let date_now = new Date();
+        let next_date = new Date(date_now.getFullYear(), date_now.getMonth() + 1, 0);
+        let dif = new Date(next_date - date_now);
         let dif_day =  dif.getDate();
         return (dif_day > 20) ? "good salary" : "bad salary"
     },
